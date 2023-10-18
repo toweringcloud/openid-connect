@@ -16,7 +16,7 @@ import { auth } from "./firebase";
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/openid-connect/",
 		element: (
 			<ProtectedRoute>
 				<Layout />
@@ -34,11 +34,11 @@ const router = createBrowserRouter([
 		],
 	},
 	{
-		path: "/login",
+		path: "/openid-connect/login",
 		element: <Login />,
 	},
 	{
-		path: "/create-account",
+		path: "/openid-connect/create-account",
 		element: <CreateAccount />,
 	},
 ]);
