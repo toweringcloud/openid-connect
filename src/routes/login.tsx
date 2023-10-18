@@ -15,10 +15,6 @@ import {
 } from "../components/auth-components";
 import GithubButton from "../components/github-button";
 
-const errors = {
-	"auth/wrong-password": "Wrong password.",
-};
-
 export default function Login() {
 	const navigate = useNavigate();
 	const [isLoading, setLoading] = useState(false);
