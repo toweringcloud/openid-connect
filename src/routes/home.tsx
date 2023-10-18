@@ -5,7 +5,7 @@ export default function Home() {
 	const navigate = useNavigate();
 	const logOut = () => {
 		auth.signOut();
-		navigate("/login");
+		navigate("/openid-connect/login");
 	};
 	return (
 		<h1>

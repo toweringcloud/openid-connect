@@ -44,7 +44,7 @@ export default function Login() {
 		try {
 			setLoading(true);
 			await signInWithEmailAndPassword(auth, email, password);
-			navigate("/");
+			navigate("/openid-connect/");
 		} catch (err) {
 			if (err instanceof FirebaseError) {
 				setError(err.message);
@@ -82,7 +82,9 @@ export default function Login() {
 			{error !== "" ? <Error>{error}</Error> : null}
 			<Switcher>
 				Don't have an account?{" "}
-				<Link to="/create-account">Create one &rarr;</Link>
+				<Link to="/openid-connect/create-account">
+					Create one &rarr;
+				</Link>
 			</Switcher>
 			<GithubButton />
 		</Wrapper>
