@@ -1,6 +1,6 @@
 # openid-connect
 
-openid-connect authentication using react & firebase
+## openid-connect authentication using react & firebase
 
 -   custom sign-up
 -   custom sign-in
