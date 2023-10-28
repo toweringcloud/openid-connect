@@ -1,10 +1,20 @@
 {
 	"name": "openid-connect",
 	"version": "0.1.0",
-	"author": "toweringcloud",
-	"description": "typescript react authentication using firebase",
-	"homepage": "https://github.com/toweringcloud/openid-connect",
+	"description": "openid-connect authentication using react & firebase",
 	"license": "MIT",
+	"author": "toweringcloud",
+	"homepage": "https://github.com/toweringcloud/openid-connect",
+	"inspiredby": "https://nomadcoders.co/nwitter",
+	"keywords": [
+		"typescript",
+		"react",
+		"firebase",
+		"authentication",
+		"signup",
+		"signin",
+		"oidc"
+	],
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
