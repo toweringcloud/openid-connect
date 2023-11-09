@@ -4,7 +4,7 @@
 	"description": "openid-connect authentication using react & firebase",
 	"license": "MIT",
 	"author": "toweringcloud",
-	"homepage": "https://github.com/toweringcloud/openid-connect",
+	"homepage": "https://toweringcloud.github.io/openid-connect",
 	"inspiredby": "https://nomadcoders.co/nwitter",
 	"keywords": [
 		"typescript",
@@ -37,10 +37,13 @@
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
 		"@vitejs/plugin-react-swc": "^3.3.2",
+		"cors": "^2.8.5",
 		"eslint": "^8.45.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-react-refresh": "^0.4.3",
+		"express": "^4.18.2",
+		"morgan": "^1.10.0",
 		"typescript": "^5.0.2",
-		"vite": "^4.4.5"
+		"vite": "^4.5.0"
 	}
 }

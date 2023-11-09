@@ -29,14 +29,14 @@ export default function GithubButton() {
 		try {
 			const provider = new GithubAuthProvider();
 			await signInWithPopup(auth, provider);
-			navigate("/");
+			navigate(`/`);
 		} catch (ex) {
 			console.log(ex);
 		}
 	};
 	return (
 		<Button onClick={onClick}>
-			<Logo src="/github-logo.svg" />
+			<Logo src={`${import.meta.env.VITE_BASE_NAME}/github-logo.svg`} />
 			Continue with Github
 		</Button>
 	);

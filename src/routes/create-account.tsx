@@ -54,7 +54,7 @@ export default function CreateAccount() {
 			await updateProfile(credentials.user, {
 				displayName: name,
 			});
-			navigate("/");
+			navigate(`/`);
 		} catch (err) {
 			if (err instanceof FirebaseError) {
 				setError(err.message);

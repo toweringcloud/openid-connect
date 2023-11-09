@@ -37,14 +37,14 @@ export default function Login() {
 	const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		setError("");
-		console.log(email, password);
+		// console.log(email, password);
 
 		if (isLoading || email === "" || password === "") return;
 
 		try {
 			setLoading(true);
 			await signInWithEmailAndPassword(auth, email, password);
-			navigate("/");
+			navigate(`/`);
 		} catch (err) {
 			if (err instanceof FirebaseError) {
 				setError(err.message);
