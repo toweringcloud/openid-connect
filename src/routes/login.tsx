@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { useNavigate, Link } from "react-router-dom";
 
 import { FirebaseError } from "firebase/app";
@@ -56,6 +57,10 @@ export default function Login() {
 
 	return (
 		<Wrapper>
+			<Helmet>
+				<meta charSet="utf-8" />
+				<title>OpenID Connect</title>
+			</Helmet>
 			<Title>Log into X</Title>
 			<Form onSubmit={onSubmit}>
 				<Input
